@@ -23,6 +23,22 @@ class MainActivity : AppCompatActivity() {
         val Log = null
         Log.d ("Howzit my name is", firstName + " " + lastName + " and I live in " + Address + " it is "
                 + male + " that I am male. I was born on " + dayOfBirth + " " + monthOfBirth + " " + yearOfBirth)
+        val currentYear = 2026
+        val age = currentYear - yearOfBirth
+        val yearsTo100 = 100 -age
+        val ageMonths = age * 12
+        val agedays = age * 365
+        val remainder = age% 5
+        Log.d( "STUDENT INFO", "Hello, my name is $firstName $lastName. I live at $Address. It is $isMale" +
+                "that  I am male." + " I was born on $dayOfBirth,$monthOfBirth/$yearOfBirth."+
+               + "I am $age years old. I will turn 100 in $yearsTo100 years."+
+                "My age in months is $ageMonths. My age in days is $agedays"+ "The remainder when my age is divided by 5 is $remainder.")
+
+
+
+
+
+
 
 
 
